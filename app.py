@@ -147,6 +147,10 @@ def get_sales_history(address, token):
         price_df.sort_values('date', inplace=True)
 
         return price_df
+    else:
+        price_df = pd.DataFrame()
+
+        return price_df
 
 
 def get_floor_price_df(contract_address):
